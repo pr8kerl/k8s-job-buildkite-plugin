@@ -49,9 +49,9 @@ steps:
 - label: ":kubernetes: job step"
   branches: master
   plugins:
-    MYOB-Technology/kustomize-job:
-      name: k8s-kustom-job
-      overlay: overlays/environment
+    - MYOB-Technology/kustomize-job:
+        name: k8s-kustom-job
+        overlay: overlays/environment
   agents:
     queue: bk-queue-name
 ```
